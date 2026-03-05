@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class maximumsubarray{
+    private:
+    int arr[5]={1,2,3,4,5};
+    int n=5;
+    public:
+    void findmaxi(){
+        for(int st=0; st<n; st++){
+            for(int end=st; end<n; end++){
+                for(int i=st; i<=end; i++){
+                    cout<<arr[i];
+
+                }
+                cout <<" ";
+            }
+            cout <<endl;
+        
+        }
+    }
+};
+int main(){
+    maximumsubarray obj;
+    obj.findmaxi();
+    return 0;
+}
